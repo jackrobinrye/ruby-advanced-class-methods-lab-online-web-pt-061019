@@ -38,10 +38,21 @@ class Song
     self.all.each do |song|
       if song_name == song.name
         song_match = song
-        binding.pry
       end
     end
     song_match
+  end
+  
+  def self.find_or_create_by_name(song_name)
+    song_match = false
+    self.all.each do |song|
+      if song_name == song.name
+        song_match = song
+      end
+    end
+    if song_match == false
+      self.create_by_name(song_name)
+    end
   end
 
 end
