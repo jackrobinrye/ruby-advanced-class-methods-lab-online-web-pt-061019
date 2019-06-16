@@ -60,7 +60,7 @@ class Song
       #add the name of each song to a new array 
       song_title_array << song.name 
     end 
-    binding.pry
+    song_tittle_array.
   end 
 
     
