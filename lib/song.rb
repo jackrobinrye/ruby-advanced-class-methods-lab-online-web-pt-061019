@@ -34,7 +34,7 @@ class Song
   end
 
   def self.find_by_name(song_name)
-    song_match = Song.new 
+    song_match = false 
     self.all.each do |song|
       if song_name == song.name
         song_match = song
