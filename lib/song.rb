@@ -61,7 +61,8 @@ class Song
   end 
 
   def self.new_from_filename(filename)
-    filename.split()
+    filename_array = filename.split(/\" - "|\./)
+    binding.pry
     
 
 end
