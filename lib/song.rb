@@ -37,7 +37,7 @@ class Song
     song_match = false 
     self.all.each do |song|
       if song_name == song.name
-        song_match = songhell
+        song_match = song
       end
     end
     song_match
