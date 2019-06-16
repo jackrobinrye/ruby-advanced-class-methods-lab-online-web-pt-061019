@@ -53,6 +53,7 @@ class Song
     if song_match == false
       self.create_by_name(song_name)
     end
+    song_match
   end
 
 end
