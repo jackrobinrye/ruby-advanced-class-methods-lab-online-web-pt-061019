@@ -26,6 +26,7 @@ class Song
   
   middle = Song.new_by_name("The Middle")
   secrets = Song.new_by_name("Secrets")
+  hello = Song.new_by_name("Hello")
   
   def self.create_by_name(song_name)
     song = self.create
@@ -53,7 +54,14 @@ class Song
   end
   
   def self.alphabetical
+    song_title_array = []
+    #iterate through my song array
     Song.all.each do |song|
+      #add the name of each song to a new array 
+      song_title_array << song.name 
+    end 
+    binding.pry
+  end 
       
   end
     
