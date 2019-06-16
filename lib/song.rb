@@ -73,8 +73,11 @@ class Song
     filename_name_array = filename_array[1].split(".")
     filename_song = Song.create_by_name(filename_name_array[0])
     filename_song.artist_name = filename_array[0]
-    #Song.all << filename_song
     filename_song
+  end 
+  
+  def destroy_all 
+    @@all = []
   end 
   
 end
