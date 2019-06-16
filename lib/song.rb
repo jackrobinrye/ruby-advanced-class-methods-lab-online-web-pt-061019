@@ -54,13 +54,8 @@ class Song
   end
   
   def self.alphabetical
-    song_title_array = []
     #iterate through my song array
-    Song.all.each do |song|
-      #add the name of each song to a new array 
-      song_title_array << song.name 
-    end 
-    song_tittle_array.sort
+    Song.all.sort_by 
   end 
 
     
