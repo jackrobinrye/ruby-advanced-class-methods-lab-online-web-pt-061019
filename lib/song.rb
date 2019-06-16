@@ -38,7 +38,7 @@ class Song
     self.all.each do |song|
       if song_name == song.name
         song_match = song
-        #binding.pry
+        binding.pry
       #else 
         #song_match = false 
       end
