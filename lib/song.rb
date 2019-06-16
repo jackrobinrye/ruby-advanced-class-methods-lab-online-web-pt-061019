@@ -44,7 +44,7 @@ class Song
   end
   
   def self.find_or_create_by_name(song_name)
-    if !!self.find_by_name(song_name) == false
+    if self.find_by_name(song_name) == nil
       #binding.pry
       self.create_by_name(song_name)
     else 
