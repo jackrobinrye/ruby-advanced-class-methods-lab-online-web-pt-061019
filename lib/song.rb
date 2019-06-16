@@ -55,7 +55,8 @@ class Song
   
   def self.alphabetical
     #iterate through my song array
-    Song.all.sort_by 
+    Song.all.sort_by do |song| 
+      song.name 
   end 
 
     
