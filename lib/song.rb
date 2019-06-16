@@ -72,5 +72,5 @@ class Song
     filename_array = filename.split(" - ")
     filename_name_array = filename_array[1].split(".")
     filename_song = Song.create_by_name(filename_name_array[0])
-    
+    filename_song
 end
