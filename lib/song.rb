@@ -39,8 +39,6 @@ class Song
       if song_name == song.name
         song_match = song
         binding.pry
-      #else 
-        #song_match = false 
       end
     end
     song_match
