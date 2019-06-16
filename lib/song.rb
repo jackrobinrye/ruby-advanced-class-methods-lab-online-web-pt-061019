@@ -57,6 +57,7 @@ class Song
     #iterate through my song array
     Song.all.sort_by do |song| 
       song.name 
+    end 
   end 
 
     
