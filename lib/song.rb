@@ -62,8 +62,7 @@ class Song
     end 
     binding.pry
   end 
-      
-  end
+
     
 
 end
